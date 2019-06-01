@@ -7,13 +7,15 @@ import { Location } from '@angular/common';
 
 @Component({
     selector:'app-register',
-    templateUrl:'./register.component.html'
+    templateUrl:'./edit.component.html'
 })
 export class EditComponent implements OnInit{
     users:Users;
     loaded: boolean = false;
     editForm: FormGroup;
     titFormul:string;
+    formRegis :boolean=false;
+    directiva:string="";
     constructor( private route:ActivatedRoute,private location:Location,private userService:UsersService
        ){
 
@@ -27,7 +29,8 @@ export class EditComponent implements OnInit{
             this.createForm();
             this.loaded = true;
         });
-        this.titFormul="Actualizar Información de Usuario"
+        this.titFormul="Actualizar Información de Usuario";
+        this.formRegis=false;
     }
 
     createForm() {

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "John Harold",
-      "lastname": "Chauca Guzman",
+      "lastname": "Chauca Guzmans",
       "email": "haroldguzman.jc@gmail.com",
       "phone": "947932865",
       "sexo": "M"
@@ -41,12 +41,20 @@
       "id": 5
     },
     {
+      "id": 6,
       "name": "juan perez",
-      "lastname": "chavez Guzmán",
+      "lastname": "chavez Huaman",
       "email": "mari2o@gmail.com",
       "phone": "947932865",
+      "sexo": "M"
+    },
+    {
+      "name": "Mario",
+      "lastname": "chavez Guzmán",
+      "email": "arios.jc@gmail.com",
+      "phone": "947932865",
       "sexo": "M",
-      "id": 6
+      "id": 7
     }
   ]
 }

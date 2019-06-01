@@ -13,7 +13,8 @@ export class RegisterComponent implements OnInit{
     loaded: boolean = false;
     editForm: FormGroup;
     titFormul:string;
-
+    formRegis :boolean=true;
+    directiva:string="unique";
     constructor( 
         private location:Location,
         private userService:UsersService
@@ -30,7 +31,8 @@ export class RegisterComponent implements OnInit{
         this.loaded=true;
         this.createForm();
         console.log(this.editForm);
-        this.titFormul="Crear Usuario Nuevo"
+        this.titFormul="Crear Usuario Nuevo";
+        this.formRegis=true;
     }
 
     

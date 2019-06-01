@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <label for="">Email</label>
-            <input type="email" class="form-control" [class.is-invalid]="editForm.controls.email.touched && editForm.controls.email.invalid"   name="email" formControlName="email"  unique>
+            <input type="email" class="form-control" [class.is-invalid]="editForm.controls.email.touched && editForm.controls.email.invalid"   name="email" formControlName="email">
             <div class="invalid-feedback text-left">
                 Ingrese email válido
             </div>
