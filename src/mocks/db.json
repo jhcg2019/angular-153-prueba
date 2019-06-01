@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Harold",
+      "lastname": "Chauca Guzman",
+      "email": "haroldguzman.jc@gmail.com",
+      "phone": "947932865",
+      "sexo": "M"
+    },
+    {
+      "id": 2,
+      "name": "Aymed Estela",
+      "lastname": "Romero Tadeo",
+      "email": "amyromero.et@gmail.com",
+      "phone": 989227382,
+      "sexo": "F"
+    },
+    {
+      "id": 3,
+      "name": "Mario",
+      "lastname": "Valverde Torres",
+      "email": "mario@gmail.com",
+      "phone": "988282112",
+      "sexo": "M"
+    },
+    {
+      "name": "Eduardo",
+      "lastname": "Peña Saldaña",
+      "email": "edu.hg.34@gmail.com",
+      "phone": "99299222",
+      "sexo": "M",
+      "id": 4
+    },
+    {
+      "name": "Rocio",
+      "lastname": "Mariños Leon",
+      "email": "IochMale@gmail.com",
+      "phone": "3242212",
+      "sexo": "F",
+      "id": 5
+    },
+    {
+      "name": "juan perez",
+      "lastname": "chavez Guzmán",
+      "email": "mari2o@gmail.com",
+      "phone": "947932865",
+      "sexo": "M",
+      "id": 6
+    }
+  ]
+}

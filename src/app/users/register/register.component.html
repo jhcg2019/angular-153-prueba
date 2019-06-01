@@ -1,0 +1,50 @@
+<div class="container">
+    <h1 class="text-center mb-3">{{titFormul}}</h1>
+    <form class="col-6 mt-3"  [formGroup]="editForm"  *ngIf="loaded">
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text"   [class.is-invalid]="editForm.controls.name.touched && editForm.controls.name.invalid" class="form-control"  name="name" formControlName="name" >
+            <div class="invalid-feedback text-left">
+                Ingrese un nombre válido
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Apellidos</label>
+            <input type="text" class="form-control"  [class.is-invalid]="editForm.controls.lastname.touched && editForm.controls.lastname.invalid"   name="lastname" formControlName="lastname">
+            <div class="invalid-feedback text-left">
+                Ingrese apellido válido
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" class="form-control" [class.is-invalid]="editForm.controls.email.touched && editForm.controls.email.invalid"   name="email" formControlName="email" unique >
+            <div class="invalid-feedback text-left">
+                Ingrese email válido
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Teléfono</label>
+            <input type="text" class="form-control" [class.is-invalid]="editForm.controls.phone.touched && editForm.controls.phone.invalid"  name="phone" formControlName="phone"  >
+            <div class="invalid-feedback text-left">
+                Ingrese teléfono válido
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input id="disabled" class="custom-control-input" formControlName="sexo"
+                type="radio" value="M" > 
+                <label class="custom-control-label" for="disabled">Masculino</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input  id="radio-2" class="custom-control-input" formControlName="sexo"
+                type="radio" value="F" >
+                <label class="custom-control-label" for="radio-2">Femenino</label>
+            </div>
+        </div>
+        <div class="form-group">
+        <button class="btn btn-primary" (click)="onCancel()">Cancelar</button>
+        <button class="btn btn-success ml-2" (click)="onSave()" [disabled]="editForm.invalid">Guardar</button>
+        </div>  
+
+    </form>
+</div>

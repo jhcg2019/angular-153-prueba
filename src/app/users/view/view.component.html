@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="text-center mb-3">Lista de Usuarios</h1>
+  <button class="btn btn-primary" (click)="onCreate()">Crear Usuario</button>
+  <table class="table table-striped text-center">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Admin</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users; let idx = index;">
+        <th scope="row">{{ user.id }}</th>
+        <th scope="row">{{ user.name }}</th>
+        <th scope="row">{{ user.lastname }}</th>
+        <th scope="row">{{ user.email }}</th>
+        <th scope="row">{{ user.phone }}</th>
+        <th scope="row">{{ user.sexo === "M"? "Masculino":"Femenino" }}</th>
+        <th scope="row">
+          <button class="btn btn-primary" (click)="onUpdate(user.id)">Actualizar</button>
+          <button class="btn btn-danger ml-2" (click)="onDelete(user.id)">Eliminar</button>
+        </th>
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex justify-content-center p-2">
+      <ngb-pagination
+        [collectionSize]="collectionSize"
+        [(page)]="page"
+        [pageSize]="pageSize">
+      </ngb-pagination>
+    </div>
+ <div>
